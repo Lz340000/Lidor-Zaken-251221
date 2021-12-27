@@ -1,0 +1,52 @@
+input {
+    border: 1.4px solid;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+ input:focus{
+    outline: none;
+}
+
+.pop {
+    animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+  }
+  .delay1 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay2 {
+    animation-delay: 1s;
+  }
+  
+  .delay3 {
+    animation-delay: 1.4s;
+  }
+  
+  .delay4 {
+    animation-delay: 1.8s;
+  }
+  
+  .delay5 {
+    animation-delay: 2.2s;
+  }
+
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+

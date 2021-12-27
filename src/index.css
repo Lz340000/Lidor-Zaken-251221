@@ -1,8 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'rubik-light';
+  src: url(assets/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: 'rubik-regular';
+  src: url(assets/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'rubik-bold';
+  src: url(assets/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'rubik-black';
+  src: url(assets/fonts/Rubik-Black.ttf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'rubik-regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +32,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.fontLight {
+  font-family: 'rubik-light';
+}
+
+.fontRegular {
+  font-family: 'rubik-regular';
+}
+
+.fontBold {
+  font-family: 'rubik-bold';
+}
+
+.fontBlack {
+  font-family: 'rubik-bold';
 }
