@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-shadow": ["error", { "builtinGlobals": false, "hoist": "all"}],
+        "arrow-parens":["error", "as-needed"],
+        "comma-dangle": ["error", "never"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "linebreak-style": 0,
+        "react/prop-types": 0,
+        "import/no-unresolved":0,
+        "react/function-component-definition": ["warn", {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+          }],
+          "one-var": [
+            "error",
+            {"initialized": "never", "uninitialized": "always"}
+          ],
+          "no-unused-vars":"warn",
+          "func-names":0,
+          "implicit-arrow-linebreak":0,
+          "function-paren-newline":0,
+          "object-curly-newline": 0,
+          "click-events-have-key-events":0
+    }
+}
