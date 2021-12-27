@@ -15,6 +15,7 @@ export default function useErrorHandler() {
     error => {
       try {
         const { code = 0, message = null, data, status } = error;
+        console.log(error)
           const handle = errorList[code] || httpStatus[status] || {};
 
         switch (handle.action) {
