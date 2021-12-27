@@ -1,21 +1,23 @@
 import React, { useEffect } from 'react';
-import { useAsyncAction } from 'hooks';
+import { useAsyncAction, useRouter } from 'hooks';
 import { weatherAction } from 'actions';
-
     
 const Index = ({ list=[], setShowList, setError, setSearchValue }) => {
+  const { push: redirectTo } = useRouter();
   const {error, execute} = useAsyncAction(weatherAction.getCurrentCityWeather ,false);
   const {error: error5days, execute: execute5days} = useAsyncAction(weatherAction.getFiveDaysCityWeather ,false);
+  
   const onChooseHandler = element => {
     execute(element);
     execute5days(element);
     setSearchValue(element.city)
     setShowList(false);
+    redirectTo('/');
   }
 
   useEffect(() => {
-    error && setError(error. message)
-    error5days && setError(error5days. message)
+    error && setError(error. message);
+    error5days && setError(error5days. message);
   }, [error, error5days])
 
   return (
