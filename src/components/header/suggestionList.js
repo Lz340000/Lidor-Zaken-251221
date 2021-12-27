@@ -14,8 +14,8 @@ const Index = ({ list=[], setShowList, setError, setSearchValue }) => {
   }
 
   useEffect(() => {
-    error && setError(error.Message)
-    error5days && setError(error5days.Message)
+    error && setError(error. message)
+    error5days && setError(error5days. message)
   }, [error, error5days])
 
   return (

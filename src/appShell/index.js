@@ -21,9 +21,9 @@ const Index = ({children}) => {
   }, [status, value])
 
   useEffect(() => {
-    error && setErrorDisplay(error.Message);
-    cityError && setErrorDisplay(cityError.Message);
-    error5days && setErrorDisplay(error5days.Message);
+    error && setErrorDisplay(error. message);
+    cityError && setErrorDisplay(cityError. message);
+    error5days && setErrorDisplay(error5days. message);
   }, [error, cityError, error5days])
 
     const { navigation } = useSelector(

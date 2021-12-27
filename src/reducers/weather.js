@@ -25,7 +25,6 @@ export default function weather(
             fiveDaysList: action.value
           };
       case 'ADD_FAVORITE': 
-      console.log('add')
         let tempAdd = state.favoriteList;
         tempAdd.addFavorite(action.value);
         return {

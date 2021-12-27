@@ -27,7 +27,7 @@ const Index = () => {
 
     useEffect(() => {
         status==='success' && value?.length>0? setShowList(true):setShowList(false);
-        status==='error' && setError(serverError.Message) 
+        status==='error' && setError(serverError. message) 
     }, [status, value])
 
     return (
